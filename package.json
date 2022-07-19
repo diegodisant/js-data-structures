@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "js-data-structures",
+  "version": "1.0.0",
+  "description": "Data Structures Made in Javascript",
+  "repository": "git@github.com:diegodisant/js-data-structures.git",
+  "author": "diegodisant <developerdiego0@gmail.com>",
+  "private": true,
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
