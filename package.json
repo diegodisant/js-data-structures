@@ -1,12 +1,19 @@
 {
-  "type": "module",
   "name": "js-data-structures",
   "version": "1.0.0",
-  "description": "Data Structures Made in Javascript",
+  "description": "Data Strsuctures Made in Javascript",
   "repository": "git@github.com:diegodisant/js-data-structures.git",
   "author": "diegodisant <developerdiego0@gmail.com>",
   "private": true,
   "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "jest": "^28.1.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint --fix ./src",
+    "lint:check": "./node_modules/.bin/eslint --fix-dry-run ./src"
   }
 }
