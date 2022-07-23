@@ -1,20 +1,8 @@
-import { Clonable } from "../util/Clonable.js";
-
-export class Node extends Clonable {
+class Node {
   constructor(value) {
-    super();
-
     /** @property {Node} nextNode */
     this.nextNode = null;
     this.value = value;
-  }
-
-  /**
-   *
-   * @param {Node} node
-   */
-  setNext(node) {
-    this.nextNode = node;
   }
 
   /**
@@ -22,11 +10,13 @@ export class Node extends Clonable {
    */
   clone() {
     const node = new Node(
-      this.value
+      this.value,
     );
 
-    this.setNext(this.nextNode);
+    node.nextNode = this.nextNode;
 
     return node;
   }
 }
+
+module.exports = Node;
