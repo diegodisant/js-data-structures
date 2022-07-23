@@ -1,0 +1,19 @@
+{
+  "extends": ["airbnb-base"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": false
+  },
+  "rules": {
+    "no-console": "off"
+  },
+  "overrides": [
+    {
+      "files": ["test/**/*.spec.js"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ]
+}
